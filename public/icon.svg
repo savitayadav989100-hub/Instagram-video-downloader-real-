@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fdf497" />
+      <stop offset="5%" stop-color="#fdf497" />
+      <stop offset="45%" stop-color="#fd5949" />
+      <stop offset="60%" stop-color="#d6249f" />
+      <stop offset="90%" stop-color="#285AEB" />
+    </linearGradient>
+    <linearGradient id="white-sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle rounded background -->
+  <rect x="16" y="16" width="480" height="480" rx="120" ry="120" fill="url(#ig-grad)" />
+  <rect x="16" y="16" width="480" height="240" rx="120" ry="120" fill="url(#white-sheen)" />
+
+  <!-- Outer Instagram camera outline -->
+  <rect x="116" y="116" width="280" height="280" rx="72" ry="72" fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Center Download Arrow & Play aperture symbol -->
+  <circle cx="256" cy="256" r="64" fill="none" stroke="#ffffff" stroke-width="32" />
+  <circle cx="330" cy="182" r="16" fill="#ffffff" />
+
+  <!-- Downward FastDL arrow -->
+  <path d="M256 220 L256 320 M220 284 L256 320 L292 284" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

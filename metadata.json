@@ -1,0 +1,6 @@
+{
+  "name": "FastDL - Instagram Video Downloader",
+  "description": "Download Instagram videos, reels, photos, stories, and carousel albums in HD 1080p quality for free with FastDL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

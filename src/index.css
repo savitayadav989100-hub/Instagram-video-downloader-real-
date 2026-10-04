@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* 3D button press effect */
+  .btn-3d {
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-3d:active {
+    transform: translateY(2px);
+  }
+
+  /* 3D card tilt & floating shadow */
+  .shadow-3d {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08), 0 20px 40px -15px rgba(225, 29, 72, 0.12);
+  }
+  .shadow-3d-lg {
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.12), 0 30px 60px -20px rgba(225, 29, 72, 0.18);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}

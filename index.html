@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastDL - #1 Instagram Video Downloader | Reels, Photos & Stories HD</title>
+    <meta name="description" content="FastDL is the fastest Instagram video downloader to save Reels, Videos, Photos, Stories, and Carousels in 1080p Full HD MP4 for free. No login needed." />
+    <meta name="keywords" content="fastdl, fast dl, instagram video downloader, download instagram reels, instagram story downloader, ig video download, fastdl app, instagram photo downloader, ig downloader" />
+    <meta name="author" content="FastDL" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#e11d48" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FastDL" />
+
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FastDL - #1 Instagram Video Downloader | Reels, Photos & Stories HD" />
+    <meta property="og:description" content="Download Instagram videos, reels, photos, stories, and carousel albums in 1080p Full HD quality for free with FastDL." />
+    <meta property="og:site_name" content="FastDL" />
+    <meta property="og:image" content="/pwa-512x512.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FastDL - Instagram Video Downloader" />
+    <meta name="twitter:description" content="Download Instagram videos, reels, photos, and stories in 1080p Full HD quality for free." />
+    <meta name="twitter:image" content="/pwa-512x512.png" />
+
+    <!-- PWA & Icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data for Google Search Ranking -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://fastdl.app/#webapp",
+          "name": "FastDL",
+          "alternateName": ["FastDL Instagram Downloader", "Fast DL", "FastDL.app"],
+          "url": "https://fastdl.app/",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "All (Windows, macOS, Android, iOS, Linux)",
+          "browserRequirements": "Requires Chrome, Safari, Firefox, Edge, or Opera",
+          "description": "FastDL is an online tool to download Instagram videos, reels, photos, IGTV, and stories in 1080p Full HD MP4 and JPG format.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "84290",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "featureList": [
+            "Download Instagram Reels in 1080p MP4",
+            "Download Instagram Carousel Albums with multiple slides",
+            "Download Instagram Feed Videos in original quality",
+            "Extract Instagram audio and music as MP3",
+            "Download high-resolution Instagram photos",
+            "100% Free with no login or account required"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fastdl.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How to download Instagram videos with FastDL?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "1. Copy the Instagram video or reel link. 2. Paste the link into the FastDL search box. 3. Click the Download button and select your preferred quality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is FastDL free to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, FastDL is 100% free and unlimited. You can download as many videos, reels, and photos as you like without registering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does FastDL add a watermark to downloaded videos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. All videos and photos downloaded with FastDL are clean and completely free of watermarks or logos."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#f8f9fc] text-slate-800 antialiased selection:bg-rose-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Service worker registration
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').catch(function(err) {
+            console.log('SW registration note:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+
